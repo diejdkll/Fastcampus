@@ -47,7 +47,7 @@ var exam_scores :Int = 100, 98, 75
     - val value2 = array12.get(0)
 
 추가 Index
-- index는 0 부터 시작을 한다
+- index는 0부터 시작
 - 순서를 나타낸다
 - [0, 2, 100, ...]
     - index0 : 0

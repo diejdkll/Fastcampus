@@ -26,7 +26,6 @@ println(array8[0])
 array8.set(0, 200)
 println(array8[0])
 
-
 // 배열의 인자로 변수를 넣는 방법 / 배열의 값을 변수의 값으로 할당하는 방법
 val examScore1: Int = 100
 val examScore2: Int = 90

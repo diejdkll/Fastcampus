@@ -14,7 +14,6 @@ println(numbers2)
 numbers2.addAll(2, listOf<Int>(100, 100))
 println(numbers2)
 
-
 //Set
 val numbers3 = setOf<Int>(1, 1, 1, 3, 3, 4)
 println(numbers3.contains(5))
@@ -35,8 +34,6 @@ println(numbers5.getOrDefault(1, "dafault"))
 println(numbers5.getOrDefault(3, "dafault"))
 println(numbers5.get(3))
 
-
 val numbers6 = mapOf<Int, String>(Pair(1, "one"), Pair(2, "two"))
-
 
 Iterable {  }

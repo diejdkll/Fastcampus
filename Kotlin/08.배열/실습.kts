@@ -9,8 +9,9 @@ println(array4[0])
 println(array4[2])
 println(array4[4])
 println(array4[6])
+//println(array4[12]) // -> 범위를 벗어나서 오류
 var array5 = IntArray(10, { 0 })
-//var array6 = StringArray(10, {"Hi"}) // -> 불가능
+//var array6 = StringArray(10, {"Hi"}) // -> StringArray가 존재하지 않음
 
 // 배열을 선언하는 방법 (3)
 var array6 = Array<Int>(10, { 0 })

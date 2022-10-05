@@ -6,17 +6,18 @@
 - 코드 500줄
 - 리스트
 
-- 변경가능 여부
-    - Mutable -> 변경가능
-    - Immutable -> 불변
+- 분리 방법
+    - 1. 변경가능 여부
+        - Mutable -> 변경가능
+        - Immutable -> 불변
 
-- 특징으로 분리
-    - List
-        - Mutable, Immutable
-    - Set
-        - Mutable, Immutable
-    - Map
-        - Mutable, Immutable
+    - 2. 특징으로 분리
+        - List
+          - Mutable, Immutable
+        - Set
+          - Mutable, Immutable
+        - Map
+           - Mutable, Immutable
 
 - 콜렉션은 전부다 크기가 고정되어 있지 않다
 

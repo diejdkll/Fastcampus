@@ -1,7 +1,7 @@
 11. 반복문(키워드)
 
 for (i in range(1..10){ // i반복문
-    for(j in range(1..10){// j반복문
+    for(j in range(1..10){ // j반복문
         본문1
         키워드 (break, continue, return)
         본문2

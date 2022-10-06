@@ -53,8 +53,8 @@ fun returnFunction(): Unit {
         }
     }
 }
-// i(1) -> j(1)/구문1 -> j(1)/구문2 -> j(2)/구문1
 returnFunction()
+// i(1) -> j(1)/구문1 -> j(1)/구문2 -> j(2)/구문1
 println("foreach------------------------------")
 
 // forEach + label

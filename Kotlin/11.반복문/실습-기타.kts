@@ -1,20 +1,20 @@
-val numbers = intArrayOf(5,10,15)
+val numbers = intArrayOf(5, 10, 15)
 
 // 값만 필요함
-for(number in numbers){ // forEach
+for (number in numbers) { // forEach
     println(number)
 }
 println("---------------------------")
 
 // 값과 인덱스 모두 필요할 때
-for((index, value) in numbers.withIndex()){ // forEachIndexed
+for ((index, value) in numbers.withIndex()) { // forEachIndexed
     println(index)
     println(value)
 }
 println("---------------------------")
 
 // 인덱스만 필요할 때
-for(index in numbers.indices){
+for (index in numbers.indices) {
     println(index)
 }
 println("---------------------------")

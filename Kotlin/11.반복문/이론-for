@@ -1,0 +1,13 @@
+11. 반복문(For)
+
+- for
+    for(변수명 in 범위){
+         반복문 내용
+    }
+
+var number = 1..10
+for(i in number){
+    반복문 내용
+}
+
+- forEach

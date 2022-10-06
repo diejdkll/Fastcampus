@@ -24,11 +24,11 @@ for (i in 0..numbers.size) { // 0..4
     println("반복 3")
 }
 
-for (i in 0 until numbers.size){ // 0..3
+for (i in 0 until numbers.size) { // 0..3
     println("반복 4")
 }
 
-for((index,number) in numbers.withIndex()){
+for ((index, number) in numbers.withIndex()) {
     println("" + index + "  |  " + number)
 }
 

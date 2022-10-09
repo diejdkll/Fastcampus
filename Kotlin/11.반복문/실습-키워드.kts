@@ -29,7 +29,7 @@ for (i in 1..3) { // i반복문
         else println("j : " + j) // 구문2
     }
 }
-//i(1) -> j(1)/구문1 -> j(1)/구문2 -> j(2)/구문1 -> j(3)/구문1 -> j(3)->구문2 -> i(2)...
+// i(1) -> j(1)/구문1 -> j(1)/구문2 -> j(2)/구문1 -> j(3)/구문1 -> j(3)->구문2 -> i(2)...
 println("continue + label------------------------------")
 
 // continue + label
@@ -47,7 +47,7 @@ println("return------------------------------")
 fun returnFunction(): Unit {
     for (i in 1..3) { // i반복문
         println("i : " + i)
-        for (j in 1..3) {// j반복문
+        for (j in 1..3) { // j반복문
             if (j == 2) return // 구문1
             else println("j : " + j) // 구문2
         }

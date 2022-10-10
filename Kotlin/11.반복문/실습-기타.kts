@@ -1,6 +1,6 @@
 val numbers = intArrayOf(5, 10, 15)
 
-// 값만 필요함
+// 값만 필요할 때
 for (number in numbers) { // forEach
     println(number)
 }
@@ -24,7 +24,7 @@ numbers.forEachIndexed { index, i ->
 
 }
 
-// 본문에서 사용될 변수 이름을 변경해서 사용
+// 본문에서 사용 될 변수 이름을 변경해서 사용
 numbers.forEachIndexed { index, value ->
 
 }

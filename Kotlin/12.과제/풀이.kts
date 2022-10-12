@@ -93,7 +93,7 @@ fun Soldier(
     for ((index, soldier) in soldier2.withIndex()) {
         if (index != removal) temp2.add(soldier)
     }
-    val result = listOf<List<String>>( temp1, temp2)
+    val result = listOf<List<String>>(temp1, temp2)
     return result
 }
 println(
@@ -115,3 +115,26 @@ fun MultiplicationTable(x: Int) {
 MultiplicationTable(3)
 
 //10번.
+fun OddAndEven(number1: List<Int>, number2: List<Int>): Map<String, List<Int>> {
+    val result = mutableMapOf<String, List<Int>>()
+    val totalNumberList = mutableListOf<Int>()
+    totalNumberList.addAll(number1)
+    totalNumberList.addAll(number2)
+
+    val evenNumber = mutableListOf<Int>()
+    val oddNumber = mutableListOf<Int>()
+
+    totalNumberList.forEach { number ->
+        if (number % 2 == 0) evenNumber.add(number)
+        else oddNumber.add(number)
+    }
+    result.put("짝수", evenNumber)
+    result.put("홀수", oddNumber)
+    return result
+}
+println(
+    OddAndEven(
+        number1 = listOf(1, 2, 3, 4, 5),
+        number2 = listOf(6, 7, 8, 9, 10)
+    )
+)

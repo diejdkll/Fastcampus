@@ -1,11 +1,12 @@
 //1번.
-fun CharNum(x: Char, y: Int) {
+fun StringNum(x: String, y: Int) {
 
-    for (i in 0 until y) {
-        println(x)
-    }
+    for (i in 0 until y) println(x) // 1번째 방법
+//  for (i in 0..y - 1) println(x) // 2번째 방법
+//  for (i in 1..y) println(x) // 3번째 방법
+
 }
-CharNum('A', 10)
+StringNum("안녕", 10)
 
 //2번.
 fun Sum(x: Int) {
@@ -18,7 +19,7 @@ fun Sum(x: Int) {
 Sum(10)
 
 //3번.
-fun Sum2() {
+fun Sum7() {
     var sum: Int = 0
     for (i in 1..100) {
         if (i % 7 == 0)
@@ -26,7 +27,7 @@ fun Sum2() {
     }
     println(sum)
 }
-Sum2()
+Sum7()
 
 //4번.
 fun End(x: Int) {
@@ -57,9 +58,7 @@ fun Dice() {
     var result = mutableListOf<List<Int>>()
     for (i in 1..6) {
         for (j in 1..6) {
-            if (i + j == 6) {
-                result.add(listOf<Int>(i, j))
-            }
+            if (i + j == 6) result.add(listOf<Int>(i, j))
         }
     }
     println(result)
@@ -78,6 +77,7 @@ fun Eat(x: Int, y: Int) {
 Eat(3, 2)
 
 //8번.
+
 
 //9번.
 fun MultiplicationTable(x: Int) {

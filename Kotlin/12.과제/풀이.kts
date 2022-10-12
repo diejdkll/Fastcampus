@@ -67,17 +67,42 @@ Dice()
 
 //7번.
 fun Eat(x: Int, y: Int) {
-    if (x > y) {
-        for (i in 1..(x - y)) {
-            println("밥을 먹었다")
-        }
-        println("배가 부르다")
-    } else println("배가 부르다")
+    var count = y
+    do {
+        println("밥을 먹었다")
+        count++
+    } while (x > count)
+    println("배가 부르다")
 }
 Eat(3, 2)
 
 //8번.
+fun Soldier(
+    soldier1: List<String>,
+    soldier2: List<String>,
+    removal: Int
+): List<List<String>>? {
+    if (soldier1.size < removal || soldier2.size < removal) return null
 
+    val temp1 = mutableListOf<String>()
+    val temp2 = mutableListOf<String>()
+
+    for ((index, soldier) in soldier1.withIndex()) {
+        if (index != removal) temp1.add(soldier)
+    }
+    for ((index, soldier) in soldier2.withIndex()) {
+        if (index != removal) temp2.add(soldier)
+    }
+    val result = listOf<List<String>>( temp1, temp2)
+    return result
+}
+println(
+    Soldier(
+        soldier1 = listOf<String>("A", "B", "C", "D", "E"),
+        soldier2 = listOf<String>("A", "B", "C"),
+        removal = 2
+    )
+)
 
 //9번.
 fun MultiplicationTable(x: Int) {

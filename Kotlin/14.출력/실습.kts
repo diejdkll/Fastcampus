@@ -15,3 +15,7 @@ println("\$myName") // \를 사용하는 방법
 println("${"myName"}")// ${}를 사용하는 방법
 
 println("" + number1 + "더하기" + number2 + "은" + "${number1 + number2}")
+// 문자열 + 다른 타입 -> 문자열
+println("안녕하세요"+10)
+// 다른 타입 + 문자열 -> 에러
+println(10 + "안녕하세요요)

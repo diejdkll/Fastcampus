@@ -30,7 +30,7 @@ val addTenNine4 = { number1: Int, number2: Int ->
 addTenNine(addTenNine4)
 
 // 너무 간단한 경우
-addTenNine  {number1, number2 -> number1 + number2}
+addTenNine { number1, number2 -> number1 + number2 }
 
 // 파라미터가 없는 람다 함수
 val addTenNine5: () -> Int = {

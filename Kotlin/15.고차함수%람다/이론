@@ -27,4 +27,4 @@ fun function1 (number1 : Int, number2 : Int) -> Int = {}
 3. 파라미터가 없는 람다 -> 실습
 
 4. 파라미터가 한개인 경우라면 it을 사용한다
-    - val function4 : (string) -> Unit = { println(it) }
+    - val function4 : (String) -> Unit = { println(it) }

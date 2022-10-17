@@ -41,7 +41,7 @@ class User5(name: String = "김아무개") {
     val userName: String = name
 }
 
-// 생성자에서 받는 속성이 복수개인경우
+// 생성자에서 받는 속성이 여러 개인 경우
 class User6(age: Int, name: String) {
     val age: Int
     val name: String

@@ -22,6 +22,46 @@ class User1 constructor(name: String) { // 클래스 네이밍은 대문자로 �
 // 클래스를 호출하는 방법 -> 클래스를 통해서 객체를 만드는 방법
 // 클래스를 호출 -> 인스턴스화 (Instance)
 // 객체 -> Object, Instance
-val user = User1("홍길동")
+
+// 주생성자 -> init을 생략하는 방법
+class User2 constructor(name: String) {
+    val userName: String = name
+}
+
+// 주생성자 -> constructor을 생략하는 방법
+class User3(name: String) {
+    val userName: String = name
+}
+
+// 주생성자 -> 생략할 수 있는 모든걸 생략하는 방법
+class User4(val name: String)
+
+// 주생성자 -> 기본값
+class User5(name: String = "김아무개") {
+    val userName: String = name
+}
+
+// 생성자에서 받는 속성이 복수개인경우
+class User6(age: Int, name: String) {
+    val age: Int
+    val name: String
+
+    init {
+        this.age = age // this는 클래스 자체를 의미한다(User6) -> User6의 age
+        this.name = name
+    }
+}
+// .의 의미
+// -> ~의
+val user6 = User6(20, "홍길동")
+println(user6.age)
+// - user6.age -> user6의 age
+// - user6.name -> user6의 name
+// - user6.기능 -> user6의 기능
+// -> .은 객체의 속성이나 기능을 사용할때 사용
+
+
+
+
 
 

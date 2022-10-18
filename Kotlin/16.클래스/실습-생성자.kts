@@ -84,4 +84,3 @@ println(user7.name)
 val user7_2 = User7("가나다다", 50)
 println(user7_2.age)
 
-

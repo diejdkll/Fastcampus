@@ -60,8 +60,28 @@ println(user6.age)
 // - user6.기능 -> user6의 기능
 // -> .은 객체의 속성이나 기능을 사용할때 사용
 
+// 부생성자 (Seceondary Constructor)
+// - constructor 키워드를 생략할 수 없다
+// - 주생성자에는 객체를 만들기 위한 필수 조건이 있다면, 부생성자에는 객체를 만들기 위한 옵션 조건이 있다
+// - 부생성자에는 주생성자에서 필요한 조건을 포함하고 있어야 한다 (파라미터를 포함하고 있어야 한다)
+// - 부생성자는 주생성자에게 생성을 위임해야 한다
+class User7 constructor(name: String) {
+    var age: Int = 0
+    val name: String
 
+    init {
+        this.name = name
+    }
 
+    // 부생성자는 클래스명 우측에 올 수 없다 -> 클래스의 본문에 있어야 한다
+    constructor(name: String, age: Int) :this(name) {
+        this.age = age
+    }
+}
 
+val user7 = User7("가나다")
+println(user7.name)
+val user7_2 = User7("가나다다", 50)
+println(user7_2.age)
 
 

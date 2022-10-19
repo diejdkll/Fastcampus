@@ -3,10 +3,10 @@
 속성(Property)
 class User7 {
     val age: Int
-        get(){
+        get() {
             본문
         }
-        set(value: Int){
+        set(value: Int) {
             본문
         }
     val name: String

@@ -11,8 +11,24 @@ class Book() {
         }
 }
 
-val book = Book()
-println(book.title)
-book.title = "제목변경"
-println(book.title)
+//val book = Book()
+//println(book.title)
+//book.title = "제목변경"
+//println(book.title)
 
+//lateinit
+class MasterBook() {
+    lateinit var title: String
+
+    fun nextPage() {
+        if (::title.isInitialized == true) {
+            println("페이지가 넘어간다")
+        } else {
+            println("초기화 필요")
+        }
+    }
+}
+
+val book = MasterBook() // MasterBook -> 거푸집 book -> 객체, 쩍어낸거
+book.title = "책이름"
+println(book.nextPage())

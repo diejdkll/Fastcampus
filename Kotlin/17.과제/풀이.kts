@@ -34,20 +34,16 @@ class Calculator2(val number: Int = 0) {
         this.result = number
     }
 
-    fun calculation(symbol: Char, value: Int){
-        if(symbol == '+'){
+    fun calculation(symbol: Char, value: Int) {
+        if (symbol == '+') {
             result += value
-        }
-        else if(symbol == '-'){
+        } else if (symbol == '-') {
             result -= value
-        }
-        else if(symbol == '*'){
+        } else if (symbol == '*') {
             result *= value
-        }
-        else if(symbol == '/'){
+        } else if (symbol == '/') {
             result /= value
-        }
-        else println("잘못된 연산 입니다")
+        } else println("잘못된 연산 입니다")
     }
 }
 
@@ -62,24 +58,20 @@ class Calculator3() {
 
     fun calcualte(operaters: List<Char>, inputNumbers: List<Int>) {
         operaters.forEachIndexed { index, operater ->
-            this.calculation(operater, value[index])
+            calculation(operater, inputNumbers[index])
         }
     }
 
-    fun calculation(symbol: Char, value: Int){
-        if(symbol == '+'){
+    fun calculation(symbol: Char, value: Int) {
+        if (symbol == '+') {
             result += value
-        }
-        else if(symbol == '-'){
+        } else if (symbol == '-') {
             result -= value
-        }
-        else if(symbol == '*'){
+        } else if (symbol == '*') {
             result *= value
-        }
-        else if(symbol == '/'){
+        } else if (symbol == '/') {
             result /= value
-        }
-        else println("잘못된 연산 입니다")
+        } else println("잘못된 연산 입니다")
     }
 }
 

@@ -14,3 +14,33 @@ class Bank {
         else println("잔액이 부족 합니다")
     }
 }
+
+class Account constructor(
+    val initialBalance: Int = 0
+) {
+    var balance: Int = 0
+
+    init {
+        this.balance = initialBalance
+    }
+
+    fun checkBalance(): Int {
+        return this.balance
+    }
+}
+
+val account = Account(1000)
+val bank = Bank()
+println(account.checkBalance())
+bank.save(account, 1000)
+println(account.checkBalance())
+bank.withdraw(account, 2000)
+println(account.checkBalance())
+bank.withdraw(account, 1000)
+bank.save(account, -1000)
+
+val account_B = Account(10000)
+bank.save(account_B, 1000)
+println(account_B.checkBalance())
+
+println(account.checkBalance())

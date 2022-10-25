@@ -15,9 +15,7 @@ class Bank {
     }
 }
 
-class Account constructor(
-    val initialBalance: Int = 0
-) {
+class Account (val initialBalance: Int = 0) {
     var balance: Int = 0
 
     init {

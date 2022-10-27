@@ -41,7 +41,7 @@ class DefenseWarrior1 constructor(name: String, power:Int) : Warrior1(name, powe
 
 // 주 생성자가 없는 경우
 class HardAttackWarrior1 :Warrior1{
-    constructor(name: String, power:Int, bonusPower: Int): super(name, power, "골램")
+    constructor(name: String, power:Int, bonusPower: Int): super(name, power, "골렘")
     fun hardAttack() {
         println("강하게 공격")
     }
@@ -51,7 +51,7 @@ val defenseWarrior: DefenseWarrior1 = DefenseWarrior1("똑똑한 고블린", 100
 defenseWarrior.defense()
 defenseWarrior.attack()
 
-val hardAttackWarrior: HardAttackWarrior1 = HardAttackWarrior1("멍청한 골램",100,20)
+val hardAttackWarrior: HardAttackWarrior1 = HardAttackWarrior1("멍청한 골렘",100,20)
 hardAttackWarrior.hardAttack()
 hardAttackWarrior.attack()
 
